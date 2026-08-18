@@ -13,7 +13,11 @@ import type {
   AuditLog,
 } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const isProd = import.meta.env.PROD;
+const API_BASE = import.meta.env.VITE_API_URL || (isProd ? '/api' : 'http://localhost:8000/api');
+export const STORAGE_BASE = import.meta.env.VITE_API_URL 
+  ? import.meta.env.VITE_API_URL.replace('/api', '/storage') 
+  : (isProd ? '/storage' : 'http://localhost:8000/storage');
 
 const api = axios.create({
   baseURL: API_BASE,

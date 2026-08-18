@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, PlusCircle, Eye, Download, AlertTriangle } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
-import { certificateApi } from '../services/api';
+import { certificateApi, STORAGE_BASE } from '../services/api';
 import { useAuth } from '../hooks/useAuth';
 import type { Certificate } from '../types';
 
@@ -146,7 +146,7 @@ export default function CertificateListPage() {
 
                         {cert.pdf_path && (
                           <a
-                            href={`http://localhost:8000/storage/${cert.pdf_path}`}
+                            href={`${STORAGE_BASE}/${cert.pdf_path}`}
                             target="_blank"
                             rel="noreferrer"
                             className="p-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 transition-colors"

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Download, Shield, Key, AlertTriangle } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
-import { certificateApi } from '../services/api';
+import { certificateApi, STORAGE_BASE } from '../services/api';
 import { useAuth } from '../hooks/useAuth';
 import type { CertificateDetail } from '../types';
 
@@ -99,7 +99,7 @@ export default function CertificateDetailPage() {
               <div className="flex items-center gap-3">
                 {cert.pdf_path && (
                   <a
-                    href={`http://localhost:8000/storage/${cert.pdf_path}`}
+                    href={`${STORAGE_BASE}/${cert.pdf_path}`}
                     target="_blank"
                     rel="noreferrer"
                     className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm flex items-center gap-2 shadow-lg shadow-blue-500/20"

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FileCheck, Shield, ArrowLeft, Download, CheckCircle2, AlertCircle } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
-import { certificateApi } from '../services/api';
+import { certificateApi, STORAGE_BASE } from '../services/api';
 import type { Certificate } from '../types';
 
 export default function CreateCertificatePage() {
@@ -87,7 +87,7 @@ export default function CreateCertificatePage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href={`http://localhost:8000/storage/${issuedCert.pdf_path}`}
+                href={`${STORAGE_BASE}/${issuedCert.pdf_path}`}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"

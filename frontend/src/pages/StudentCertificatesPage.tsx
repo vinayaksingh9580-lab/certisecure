@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Download, Eye, Search, GraduationCap } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
 import { useAuth } from '../hooks/useAuth';
-import { certificateApi } from '../services/api';
+import { certificateApi, STORAGE_BASE } from '../services/api';
 import type { Certificate } from '../types';
 
 export default function StudentCertificatesPage() {
@@ -104,7 +104,7 @@ export default function StudentCertificatesPage() {
                         </Link>
                         {cert.pdf_path && (
                           <a
-                            href={`http://localhost:8000/storage/${cert.pdf_path}`}
+                            href={`${STORAGE_BASE}/${cert.pdf_path}`}
                             target="_blank"
                             rel="noreferrer"
                             className="p-2 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 transition-colors"
