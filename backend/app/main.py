@@ -54,8 +54,8 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # -- Static Files --
-os.makedirs(settings.certificate_storage_path, exist_ok=True)
-app.mount("/storage", StaticFiles(directory=settings.storage_path), name="storage")
+os.makedirs(settings.certificate_dir, exist_ok=True)
+app.mount("/storage", StaticFiles(directory=str(settings.storage_dir)), name="storage")
 
 # -- API Routers --
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
