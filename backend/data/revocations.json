@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "certificate_id": 2,
+    "reason": "incorrect_information",
+    "reason_detail": "Re-issuing certificate with corrected course title",
+    "revoked_by": 2,
+    "revoked_at": "2026-08-18T07:50:09.309885+00:00"
+  }
+]

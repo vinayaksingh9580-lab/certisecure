@@ -1,0 +1,10 @@
+/* CertiSecure — App-level styles (minimal, most styles are in index.css) */
+
+/* Ensure smooth page transitions */
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.slide-up {
+  animation: slideUp 0.4s ease-out;
+}

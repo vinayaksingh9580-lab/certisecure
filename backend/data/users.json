@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "type": "user",
+    "email": "admin@certisecure.dev",
+    "password_hash": "$2b$12$3a5tZa43shW3uKn0R1sCNOLlTAbCHqlIExi5YzZcC0NtLjst7YlIq",
+    "full_name": "System Administrator",
+    "role": "admin",
+    "institution_id": null,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:05.074699+00:00",
+    "updated_at": "2026-08-18T07:50:05.074708+00:00"
+  },
+  {
+    "id": 2,
+    "type": "user",
+    "email": "issuer@sms.edu.in",
+    "password_hash": "$2b$12$/HF9kF7QYKmnwDKXhL7QcOJPgZ366bVdYhkfkTBos/uf09xSvRI0i",
+    "full_name": "Dr. Rajesh Kumar (SMS)",
+    "role": "issuer",
+    "institution_id": 1,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:05.746040+00:00",
+    "updated_at": "2026-08-18T07:50:05.746047+00:00"
+  },
+  {
+    "id": 3,
+    "type": "user",
+    "email": "issuer@iitd.ac.in",
+    "password_hash": "$2b$12$6FIKZR2Ezz4lne7ssuBlg.Rn65ZLXToOLNzsykiCkjrEAeG30zayS",
+    "full_name": "Prof. Priya Sharma (IITD)",
+    "role": "issuer",
+    "institution_id": 2,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:06.394549+00:00",
+    "updated_at": "2026-08-18T07:50:06.394571+00:00"
+  },
+  {
+    "id": 4,
+    "type": "user",
+    "email": "issuer@nitt.edu",
+    "password_hash": "$2b$12$wLmWo..l8e/bI8BmScM2COSImJuxnYdlKzxtoN0ASbVhPNoqe4kr6",
+    "full_name": "Dr. Suresh Rajan (NITT)",
+    "role": "issuer",
+    "institution_id": 3,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:07.059166+00:00",
+    "updated_at": "2026-08-18T07:50:07.059174+00:00"
+  },
+  {
+    "id": 5,
+    "type": "user",
+    "email": "verifier@certisecure.dev",
+    "password_hash": "$2b$12$LmR3KJpCNOXUD2OFhJF6J.Lo33wDuWveJ0R7TN2XKhT8p5UjOfF/G",
+    "full_name": "Global Verifier Account",
+    "role": "verifier",
+    "institution_id": null,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:07.702913+00:00",
+    "updated_at": "2026-08-18T07:50:07.702921+00:00"
+  },
+  {
+    "id": 6,
+    "type": "user",
+    "email": "hr@techcorp.com",
+    "password_hash": "$2b$12$c4msO9KVZKBWz6UuluE6EOvHYENpN67z1OandkOBg/QgUUfF4EN3.",
+    "full_name": "HR Recruiter (TechCorp)",
+    "role": "verifier",
+    "institution_id": null,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:08.347334+00:00",
+    "updated_at": "2026-08-18T07:50:08.347341+00:00"
+  },
+  {
+    "id": 7,
+    "type": "user",
+    "email": "student@sms.edu.in",
+    "password_hash": "$2b$12$YaJfGhn0qboSPn5P9jcZkO0zxG6oLOfPtYtQdMzIcuBF2EstqpG6K",
+    "full_name": "Vinayak Singh",
+    "role": "verifier",
+    "institution_id": 1,
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:08.997006+00:00",
+    "updated_at": "2026-08-18T07:50:08.997013+00:00"
+  }
+]

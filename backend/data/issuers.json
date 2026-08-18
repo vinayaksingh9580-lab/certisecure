@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "type": "institution",
+    "name": "SMS Lucknow",
+    "code": "SMS-LKO",
+    "domain": "sms.edu.in",
+    "description": "School of Management Sciences, Lucknow",
+    "logo_path": null,
+    "status": "verified",
+    "created_at": "2026-08-18T07:50:04.405439+00:00",
+    "updated_at": "2026-08-18T07:50:04.405446+00:00"
+  },
+  {
+    "id": 1,
+    "type": "key",
+    "institution_id": 1,
+    "key_id": "KEY-20260818075004-40780F3A",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAKkh+TizCEZhntBwkA6EQWcp6PtHGV2tAyFcHUpGkLAk=\n-----END PUBLIC KEY-----\n",
+    "encrypted_private_key": "gAAAAABqhA6sUInRNc66a5cz7yTLYOGjGd4kHS2qN9Uq7uQK7doo-rDhceQgBp4-uaUeQ2gsU9-oE9y3P2n8O7rlDd6RkdMuy2rgdshqSxKeOSwDYyu9PBmjhDUJ4ks-z09Yp5CZIs3sojTw-7l9OAE6N78RcsEIjQaVhCh1S0PGL6COi3ogYIKx3Kasrlu7isj5Ju0xZ9z6RZa16GjqKp05RZJvutjziibj86WZL-yO4CVVTBZIvCc=",
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:04.408766+00:00",
+    "deactivated_at": null
+  },
+  {
+    "id": 2,
+    "type": "institution",
+    "name": "Indian Institute of Technology Delhi",
+    "code": "IIT-DEL",
+    "domain": "iitd.ac.in",
+    "description": "Premier engineering institution",
+    "logo_path": null,
+    "status": "verified",
+    "created_at": "2026-08-18T07:50:04.412400+00:00",
+    "updated_at": "2026-08-18T07:50:04.412406+00:00"
+  },
+  {
+    "id": 2,
+    "type": "key",
+    "institution_id": 2,
+    "key_id": "KEY-20260818075004-1FAF4AF2",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAmiE6G+LJpiLcQRGrZCv/0MlIdPHbJFgxd0sKVqcoy9w=\n-----END PUBLIC KEY-----\n",
+    "encrypted_private_key": "gAAAAABqhA6s7FxF9pLWVRFoiGcB9Y4xlcMY0rAcD8Ack7DVA0w1iCw_WlhnWv8VBq9nhOhakGziINinyCqt3sWvp3kuLeiZyJWMKS1lTI9BW60PwLwLkUxZDgoyqiGU62JtrjvJExVYodopO8AwyExiOu8qzODimp7Cwsdl8m63ZgtA1z1tH0d6oyqGKYW8OQ126eIm8wd0ndTb8ZD3LMDZwjq74FhZZnRyJvXiJfk6IqpNh1LGRD8=",
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:04.416364+00:00",
+    "deactivated_at": null
+  },
+  {
+    "id": 3,
+    "type": "institution",
+    "name": "National Institute of Technology Trichy",
+    "code": "NIT-TCH",
+    "domain": "nitt.edu",
+    "description": "National Institute of Technology",
+    "logo_path": null,
+    "status": "verified",
+    "created_at": "2026-08-18T07:50:04.419604+00:00",
+    "updated_at": "2026-08-18T07:50:04.419609+00:00"
+  },
+  {
+    "id": 3,
+    "type": "key",
+    "institution_id": 3,
+    "key_id": "KEY-20260818075004-5B9A36C1",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAi18Y+fmyI8iLDysXwLlVMTx2WqWmIRc6aSUEzW1fWN4=\n-----END PUBLIC KEY-----\n",
+    "encrypted_private_key": "gAAAAABqhA6sWjdH004CycRU593KAesG71xzYZ93c8-ci0BOUvnKEfIJYLtuJvwwkSz_BdIfzx-HMu6zW7LiiXJLX3uxDpw40fm0Aq4IB5R_32T14XXFETk1c0Eu5IlMYHfPm3sEWJ89GCxMJqY92i20BAST8i9kl0-1mav-SGTptb2vrXF00GZ5euz6hcRHYXYIOl4E2Bmfu9EOPC4hjnwsF6Pzp8V6YGfX-4k3aSjvr4QIKmyD3ak=",
+    "is_active": true,
+    "created_at": "2026-08-18T07:50:04.423316+00:00",
+    "deactivated_at": null
+  }
+]
