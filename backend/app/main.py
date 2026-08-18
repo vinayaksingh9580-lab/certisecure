@@ -26,6 +26,16 @@ async def lifespan(app: FastAPI):
     settings.certificate_dir
     settings.data_path
     json_storage.initialize()
+    
+    # Run seed safely within the async lifespan
+    users_file = settings.data_path / "users.json"
+    if not users_file.exists() or users_file.stat().st_size == 0 or len(json_storage._read_file_sync(users_file)) == 0:
+        try:
+            from app.seed import seed
+            await seed()
+        except Exception as e:
+            print("Seeding failed:", e)
+    
     yield
 
 

@@ -53,7 +53,7 @@ def generate_certificate_pdf(
 
     page_width, page_height = landscape(A4)
 
-    pdf_dir = Path(settings.certificate_storage_path) / "pdf"
+    pdf_dir = settings.certificate_dir / "pdf"
     pdf_dir.mkdir(parents=True, exist_ok=True)
     filename = f"{certificate_uid}.pdf"
     filepath = pdf_dir / filename
@@ -195,7 +195,7 @@ def generate_certificate_pdf(
 
     # ---- QR Code ----
     if qr_path:
-        qr_full_path = Path(settings.storage_path) / qr_path
+        qr_full_path = settings.storage_dir / qr_path
         if qr_full_path.exists():
             qr_size = 75
             c.drawImage(

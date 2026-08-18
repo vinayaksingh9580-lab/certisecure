@@ -41,7 +41,7 @@ def generate_qr_code(certificate_uid: str) -> str:
     img = qr.make_image(fill_color="#1e3a5f", back_color="white")
 
     # Save to storage
-    qr_dir = Path(settings.certificate_storage_path) / "qr"
+    qr_dir = settings.certificate_dir / "qr"
     qr_dir.mkdir(parents=True, exist_ok=True)
 
     filename = f"{certificate_uid}.png"

@@ -52,18 +52,7 @@ class JSONStorage:
             if not f.exists() or f.stat().st_size == 0:
                 self._write_file_sync(f, [])
 
-        # Auto-seed demo data if storage has no users
-        if len(self._read_file_sync(self.users_file)) == 0:
-            try:
-                import asyncio
-                from app.seed import seed
-                try:
-                    loop = asyncio.get_running_loop()
-                    loop.create_task(seed())
-                except RuntimeError:
-                    asyncio.run(seed())
-            except Exception:
-                pass
+        # Seeding is now handled in main.py lifespan
 
     def _read_file_sync(self, file_path: Path) -> List[Dict[str, Any]]:
         """Synchronously read a JSON file safely."""
