@@ -1,0 +1,7 @@
+[project]
+name = "certisecure"
+version = "2.0.0"
+description = "Secure Digital Certificate Verification System using Ed25519 & SHA-256"
+
+[tool.vercel]
+entrypoint = "backend.app.main:app"

@@ -6,7 +6,7 @@
     "result": "VALID",
     "ip_address": "192.168.1.10",
     "user_agent": null,
-    "created_at": "2026-08-18T05:50:09.313320+00:00"
+    "created_at": "2026-08-18T06:18:39.605497+00:00"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "result": "VALID",
     "ip_address": "192.168.1.12",
     "user_agent": null,
-    "created_at": "2026-08-18T05:50:09.316034+00:00"
+    "created_at": "2026-08-18T06:18:39.609094+00:00"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "result": "REVOKED",
     "ip_address": "192.168.1.15",
     "user_agent": null,
-    "created_at": "2026-08-18T05:50:09.318887+00:00"
+    "created_at": "2026-08-18T06:18:39.612428+00:00"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "result": "NOT_FOUND",
     "ip_address": "192.168.1.20",
     "user_agent": null,
-    "created_at": "2026-08-18T05:50:09.321857+00:00"
+    "created_at": "2026-08-18T06:18:39.618268+00:00"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "result": "TAMPERED",
     "ip_address": "192.168.1.25",
     "user_agent": null,
-    "created_at": "2026-08-18T05:50:09.324831+00:00"
+    "created_at": "2026-08-18T06:18:39.622783+00:00"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "result": "VALID",
     "ip_address": null,
     "user_agent": null,
-    "created_at": "2026-08-18T07:50:09.342151+00:00"
+    "created_at": "2026-08-18T08:18:39.645009+00:00"
   },
   {
     "id": 7,
@@ -60,6 +60,6 @@
     "result": "TAMPERED",
     "ip_address": null,
     "user_agent": null,
-    "created_at": "2026-08-18T07:50:09.353351+00:00"
+    "created_at": "2026-08-18T08:18:39.658839+00:00"
   }
 ]
