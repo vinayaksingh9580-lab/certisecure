@@ -26,7 +26,7 @@ class JSONStorage:
     """Atomic, thread-safe JSON storage manager."""
 
     def __init__(self, data_dir: Optional[str] = None):
-        self.data_dir = Path(data_dir or getattr(settings, "data_directory", "./data"))
+        self.data_dir = Path(data_dir) if data_dir else settings.data_path
         self._lock = asyncio.Lock()
 
         # File paths

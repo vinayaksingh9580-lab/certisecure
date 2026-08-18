@@ -54,19 +54,22 @@ class Settings(BaseSettings):
 
     @property
     def data_path(self) -> Path:
-        path = Path(self.data_directory)
+        import os
+        path = Path("/tmp/data") if os.environ.get("VERCEL") == "1" else Path(self.data_directory)
         path.mkdir(parents=True, exist_ok=True)
         return path
 
     @property
     def storage_dir(self) -> Path:
-        path = Path(self.storage_path)
+        import os
+        path = Path("/tmp/storage") if os.environ.get("VERCEL") == "1" else Path(self.storage_path)
         path.mkdir(parents=True, exist_ok=True)
         return path
 
     @property
     def certificate_dir(self) -> Path:
-        path = Path(self.certificate_storage_path)
+        import os
+        path = Path("/tmp/storage/certificates") if os.environ.get("VERCEL") == "1" else Path(self.certificate_storage_path)
         path.mkdir(parents=True, exist_ok=True)
         return path
 
