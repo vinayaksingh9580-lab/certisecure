@@ -54,7 +54,7 @@ export default function VerifyPage() {
           scanner?.clear();
           navigate(`/verify/${uid}`);
         },
-        () => {}
+        () => { }
       );
     }
 
@@ -262,9 +262,8 @@ export default function VerifyPage() {
                 <div className="space-y-4 text-sm">
                   <div className="flex items-center justify-between p-3.5 rounded-xl bg-gray-900/70 border border-gray-800">
                     <span className="text-gray-300 font-medium">Digital Signature (Ed25519)</span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 ${
-                      result.crypto.signature_valid ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
-                    }`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 ${result.crypto.signature_valid ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
+                      }`}>
                       {result.crypto.signature_valid ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />}
                       {result.crypto.signature_valid ? 'VALID SIGNATURE' : 'INVALID SIGNATURE'}
                     </span>
@@ -272,9 +271,8 @@ export default function VerifyPage() {
 
                   <div className="flex items-center justify-between p-3.5 rounded-xl bg-gray-900/70 border border-gray-800">
                     <span className="text-gray-300 font-medium">Document Hash Match (SHA-256)</span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 ${
-                      result.crypto.hash_match ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
-                    }`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 ${result.crypto.hash_match ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
+                      }`}>
                       {result.crypto.hash_match ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />}
                       {result.crypto.hash_match ? 'HASH MATCH' : 'MISMATCH DETECTED'}
                     </span>

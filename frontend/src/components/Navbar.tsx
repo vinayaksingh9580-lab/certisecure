@@ -8,6 +8,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isStudent = localStorage.getItem('user_type') === 'student';
 
   const handleLogout = () => {
     logout();
@@ -36,15 +37,16 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-6">
-          <Link
-            to="/verify"
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-              isActive('/verify') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
-            }`}
-          >
-            <Search className="w-4 h-4" />
-            Verify Certificate
-          </Link>
+          {!isStudent && (
+            <Link
+              to="/verify"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/verify') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
+                }`}
+            >
+              <Search className="w-4 h-4" />
+              Verify Certificate
+            </Link>
+          )}
 
           {!isAuthenticated && (
             <Link
@@ -58,22 +60,22 @@ export default function Navbar() {
 
           {isAuthenticated ? (
             <>
-              <Link
-                to="/dashboard"
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                  isActive('/dashboard') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                <LayoutDashboard className="w-4 h-4" />
-                Dashboard
-              </Link>
+              {!isStudent && (
+                <Link
+                  to="/dashboard"
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/dashboard') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
+                    }`}
+                >
+                  <LayoutDashboard className="w-4 h-4" />
+                  Dashboard
+                </Link>
+              )}
 
               {(user?.role === 'admin' || user?.role === 'issuer') && (
                 <Link
                   to="/issue"
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                    isActive('/issue') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
-                  }`}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/issue') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
+                    }`}
                 >
                   <FileCheck className="w-4 h-4" />
                   Issue Certificate
@@ -83,31 +85,30 @@ export default function Navbar() {
               {user?.role === 'admin' && (
                 <Link
                   to="/issuers"
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                    isActive('/issuers') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
-                  }`}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/issuers') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
+                    }`}
                 >
                   <Building2 className="w-4 h-4" />
                   Issuer Registry
                 </Link>
               )}
 
-              <Link
-                to="/audit"
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                  isActive('/audit') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                <History className="w-4 h-4" />
-                Audit Logs
-              </Link>
+              {!isStudent && (
+                <Link
+                  to="/audit"
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/audit') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:text-white'
+                    }`}
+                >
+                  <History className="w-4 h-4" />
+                  Audit Logs
+                </Link>
+              )}
 
-              {user?.role === 'verifier' && (
+              {isStudent && (
                 <Link
                   to="/student/certificates"
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                    isActive('/student/certificates') ? 'bg-emerald-600/20 text-emerald-400 border border-emerald-500/30' : 'text-gray-300 hover:text-white'
-                  }`}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${isActive('/student/certificates') ? 'bg-emerald-600/20 text-emerald-400 border border-emerald-500/30' : 'text-gray-300 hover:text-white'
+                    }`}
                 >
                   <GraduationCap className="w-4 h-4" />
                   My Certificates
@@ -122,7 +123,7 @@ export default function Navbar() {
           {isAuthenticated ? (
             <div className="flex items-center gap-3 pl-3 border-l border-gray-800">
               <Link
-                to={user?.role === 'verifier' ? '/student/certificates' : '/profile'}
+                to={isStudent ? '/student/certificates' : '/profile'}
                 className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-800/60 hover:bg-gray-800 text-sm font-medium text-gray-200 border border-gray-700/50"
               >
                 <UserIcon className="w-4 h-4 text-cyan-400" />
@@ -169,22 +170,26 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden pt-4 pb-3 border-t border-gray-800 mt-3 space-y-2">
-          <Link
-            to="/verify"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
-          >
-            Verify Certificate
-          </Link>
+          {!isStudent && (
+            <Link
+              to="/verify"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
+            >
+              Verify Certificate
+            </Link>
+          )}
           {isAuthenticated ? (
             <>
-              <Link
-                to="/dashboard"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
-              >
-                Dashboard
-              </Link>
+              {!isStudent && (
+                <Link
+                  to="/dashboard"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
+                >
+                  Dashboard
+                </Link>
+              )}
               {(user?.role === 'admin' || user?.role === 'issuer') && (
                 <Link
                   to="/issue"
@@ -203,7 +208,7 @@ export default function Navbar() {
                   Issuer Registry
                 </Link>
               )}
-              {user?.role === 'verifier' && (
+              {isStudent && (
                 <Link
                   to="/student/certificates"
                   onClick={() => setMobileMenuOpen(false)}
@@ -212,13 +217,15 @@ export default function Navbar() {
                   My Certificates
                 </Link>
               )}
-              <Link
-                to="/audit"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
-              >
-                Audit Logs
-              </Link>
+              {!isStudent && (
+                <Link
+                  to="/audit"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:bg-gray-800"
+                >
+                  Audit Logs
+                </Link>
+              )}
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);

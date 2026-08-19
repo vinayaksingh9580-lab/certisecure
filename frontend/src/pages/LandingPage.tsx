@@ -28,31 +28,7 @@ export default function LandingPage() {
             CertiSecure2 combines <strong className="text-gray-200">Ed25519 digital signatures</strong>, <strong className="text-gray-200">SHA-256 cryptographic hashes</strong>, and instant <strong className="text-gray-200">QR code verification</strong> to completely eliminate certificate fraud. No blockchain required.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/verify"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold text-lg shadow-xl shadow-blue-500/25 flex items-center justify-center gap-3 transition-all hover:scale-105"
-            >
-              <QrCode className="w-5 h-5" />
-              Verify a Certificate
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-
-            <Link
-              to="/student/register"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-200 font-semibold text-lg border border-emerald-500/30 flex items-center justify-center gap-2 transition-colors"
-            >
-              <Lock className="w-5 h-5 text-emerald-400" />
-              Student Access Portal
-            </Link>
-
-            <Link
-              to="/login"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gray-800/80 hover:bg-gray-800 text-gray-200 font-semibold text-lg border border-gray-700/80 flex items-center justify-center gap-2 transition-colors"
-            >
-              <Lock className="w-5 h-5 text-gray-400" />
-              Issuer / Admin Portal
-            </Link>
+          <div className="flex flex-wrap items-center justify-center gap-4">
           </div>
         </div>
       </section>

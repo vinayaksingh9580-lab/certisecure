@@ -44,6 +44,7 @@ export default function StudentRegisterPage() {
       });
 
       await login(form.email, form.password);
+      localStorage.setItem('user_type', 'student');
       navigate('/student/certificates');
     } catch (err: any) {
       const message = err.response?.data?.detail || 'Unable to register. Please try again.';
@@ -151,7 +152,7 @@ export default function StudentRegisterPage() {
 
           <div className="mt-6 text-center text-sm text-gray-400">
             Already have an account?{' '}
-            <Link to="/login" className="text-emerald-400 hover:text-emerald-300 font-medium">Sign in here</Link>
+            <Link to="/student/login" className="text-emerald-400 hover:text-emerald-300 font-medium">Sign in here</Link>
           </div>
         </div>
       </div>

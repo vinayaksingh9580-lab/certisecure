@@ -6,6 +6,10 @@ import './index.css';
 
 // Pages
 import LandingPage from './pages/LandingPage';
+import AdminLoginPage from './pages/AdminLoginPage';
+import IssuerLoginPage from './pages/IssuerLoginPage';
+import VerifierLoginPage from './pages/VerifierLoginPage';
+import StudentLoginPage from './pages/StudentLoginPage';
 import LoginPage from './pages/LoginPage';
 import VerifyPage from './pages/VerifyPage';
 import DashboardPage from './pages/DashboardPage';
@@ -33,7 +37,7 @@ function RequireAuth() {
     );
   }
 
-  return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace />;
+  return isAuthenticated ? <Outlet /> : <Navigate to="/" replace />;
 }
 
 /** Requires Issuer or Admin role */
@@ -48,7 +52,7 @@ function RequireIssuerOrAdmin() {
     );
   }
 
-  if (!isAuthenticated) return <Navigate to="/login" replace />;
+  if (!isAuthenticated) return <Navigate to="/" replace />;
 
   const role = user?.role;
   if (role !== 'admin' && role !== 'issuer') {
@@ -70,7 +74,7 @@ function RequireAdmin() {
     );
   }
 
-  if (!isAuthenticated) return <Navigate to="/login" replace />;
+  if (!isAuthenticated) return <Navigate to="/" replace />;
   if (user?.role !== 'admin') return <Navigate to="/dashboard" replace />;
 
   return <Outlet />;
@@ -88,7 +92,7 @@ function RequireStudent() {
     );
   }
 
-  if (!isAuthenticated) return <Navigate to="/student/register" replace />;
+  if (!isAuthenticated) return <Navigate to="/student/login" replace />;
   if (user?.role !== 'verifier') return <Navigate to="/dashboard" replace />;
 
   return <Outlet />;
@@ -103,6 +107,10 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
+          <Route path="/admin/login" element={<AdminLoginPage />} />
+          <Route path="/issuer/login" element={<IssuerLoginPage />} />
+          <Route path="/verifier/login" element={<VerifierLoginPage />} />
+          <Route path="/student/login" element={<StudentLoginPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/student/register" element={<StudentRegisterPage />} />
           <Route path="/verify" element={<VerifyPage />} />
