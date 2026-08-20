@@ -27,8 +27,8 @@ class JSONStorage:
 
     def __init__(self, data_dir: Optional[str] = None):
         self.data_dir = Path(data_dir) if data_dir else settings.data_path
-        self._lock = asyncio.Lock()
-
+        self._lock_instance = None
+        
         # File paths
         self.users_file = self.data_dir / "users.json"
         self.issuers_file = self.data_dir / "issuers.json"
@@ -36,6 +36,12 @@ class JSONStorage:
         self.revocations_file = self.data_dir / "revocations.json"
         self.audit_logs_file = self.data_dir / "audit_logs.json"
         self.verification_logs_file = self.data_dir / "verification_logs.json"
+
+    @property
+    def _lock(self):
+        if self._lock_instance is None:
+            self._lock_instance = asyncio.Lock()
+        return self._lock_instance
 
     def initialize(self):
         """Ensure storage directory and JSON files exist."""

@@ -7,7 +7,7 @@ Configures middleware, CORS, routers, and startup events.
 import os
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -62,6 +62,21 @@ app.add_middleware(
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
+@app.middleware("http")
+async def seed_on_cold_start(request: Request, call_next):
+    is_vercel = bool(os.environ.get("VERCEL") or os.environ.get("VERCEL_ENV"))
+    if is_vercel and not hasattr(app.state, "seeded"):
+        app.state.seeded = True
+        users_file = settings.data_path / "users.json"
+        if not users_file.exists() or users_file.stat().st_size == 0 or len(json_storage._read_file_sync(users_file)) == 0:
+            try:
+                json_storage.initialize()
+                from app.seed import seed
+                await seed()
+            except Exception as e:
+                print("Seeding failed during Vercel cold start:", e)
+    return await call_next(request)
 
 # -- Static Files --
 os.makedirs(settings.certificate_dir, exist_ok=True)
