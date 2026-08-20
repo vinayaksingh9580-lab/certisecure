@@ -48,15 +48,7 @@ export default function Navbar() {
             </Link>
           )}
 
-          {!isAuthenticated && (
-            <Link
-              to="/student/register"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-emerald-300 hover:text-white transition-colors"
-            >
-              <GraduationCap className="w-4 h-4" />
-              Student Access
-            </Link>
-          )}
+
 
           {isAuthenticated ? (
             <>

@@ -728,5 +728,145 @@
     "ip_address": "127.0.0.1",
     "metadata_json": "{\"result\": \"VALID\"}",
     "created_at": "2026-08-19T12:15:47.368758+00:00"
+  },
+  {
+    "id": 74,
+    "actor_id": 2,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "2",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:13:08.017196+00:00"
+  },
+  {
+    "id": 75,
+    "actor_id": 10,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "10",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:14:06.295673+00:00"
+  },
+  {
+    "id": 76,
+    "actor_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "1",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:22:16.974891+00:00"
+  },
+  {
+    "id": 77,
+    "actor_id": 12,
+    "action": "USER_CREATED",
+    "resource_type": "user",
+    "resource_id": "12",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:27:45.627992+00:00"
+  },
+  {
+    "id": 78,
+    "actor_id": 12,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "12",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:27:46.420834+00:00"
+  },
+  {
+    "id": 79,
+    "actor_id": 8,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "8",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-19T15:28:46.848085+00:00"
+  },
+  {
+    "id": 80,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:28:58.508312+00:00"
+  },
+  {
+    "id": 81,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:28:58.562450+00:00"
+  },
+  {
+    "id": 82,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:30:22.124767+00:00"
+  },
+  {
+    "id": 83,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:30:22.184776+00:00"
+  },
+  {
+    "id": 84,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:52:15.661298+00:00"
+  },
+  {
+    "id": 85,
+    "actor_id": null,
+    "action": "CERT_VERIFIED",
+    "resource_type": "certificate",
+    "resource_id": "CERT-SMS-LKO-2026-000003",
+    "ip_address": "127.0.0.1",
+    "metadata_json": "{\"result\": \"TAMPERED\"}",
+    "created_at": "2026-08-19T15:52:15.685953+00:00"
+  },
+  {
+    "id": 86,
+    "actor_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "1",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-20T04:14:42.034579+00:00"
+  },
+  {
+    "id": 87,
+    "actor_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": "1",
+    "ip_address": "127.0.0.1",
+    "metadata_json": null,
+    "created_at": "2026-08-20T04:54:50.039784+00:00"
   }
 ]

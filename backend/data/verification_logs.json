@@ -259,5 +259,59 @@
     "ip_address": "127.0.0.1",
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
     "created_at": "2026-08-19T12:15:47.345070+00:00"
+  },
+  {
+    "id": 30,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:28:58.462087+00:00"
+  },
+  {
+    "id": 31,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:28:58.537393+00:00"
+  },
+  {
+    "id": 32,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:30:22.098698+00:00"
+  },
+  {
+    "id": 33,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:30:22.156220+00:00"
+  },
+  {
+    "id": 34,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:52:15.652500+00:00"
+  },
+  {
+    "id": 35,
+    "certificate_id": 6,
+    "certificate_uid": "CERT-SMS-LKO-2026-000003",
+    "result": "TAMPERED",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "created_at": "2026-08-19T15:52:15.674402+00:00"
   }
 ]
