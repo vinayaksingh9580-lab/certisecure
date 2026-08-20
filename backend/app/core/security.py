@@ -20,7 +20,7 @@ security_scheme = HTTPBearer(auto_error=False)
 def hash_password(password: str) -> str:
     """Hash a password using bcrypt directly."""
     pwd_bytes = password.encode("utf-8")
-    salt = bcrypt.gensalt()
+    salt = bcrypt.gensalt(rounds=4)
     hashed = bcrypt.hashpw(pwd_bytes, salt)
     return hashed.decode("utf-8")
 

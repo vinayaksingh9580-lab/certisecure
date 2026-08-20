@@ -6,7 +6,7 @@
     "result": "VALID",
     "ip_address": "192.168.1.10",
     "user_agent": null,
-    "created_at": "2026-08-18T06:18:39.605497+00:00"
+    "created_at": "2026-08-20T03:24:14.072103+00:00"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "result": "VALID",
     "ip_address": "192.168.1.12",
     "user_agent": null,
-    "created_at": "2026-08-18T06:18:39.609094+00:00"
+    "created_at": "2026-08-20T03:24:14.076214+00:00"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "result": "REVOKED",
     "ip_address": "192.168.1.15",
     "user_agent": null,
-    "created_at": "2026-08-18T06:18:39.612428+00:00"
+    "created_at": "2026-08-20T03:24:14.084373+00:00"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "result": "NOT_FOUND",
     "ip_address": "192.168.1.20",
     "user_agent": null,
-    "created_at": "2026-08-18T06:18:39.618268+00:00"
+    "created_at": "2026-08-20T03:24:14.089668+00:00"
   },
   {
     "id": 5,
@@ -42,276 +42,6 @@
     "result": "TAMPERED",
     "ip_address": "192.168.1.25",
     "user_agent": null,
-    "created_at": "2026-08-18T06:18:39.622783+00:00"
-  },
-  {
-    "id": 6,
-    "certificate_id": 1,
-    "certificate_uid": "CERT-SMS-LKO-2026-000001",
-    "result": "VALID",
-    "ip_address": null,
-    "user_agent": null,
-    "created_at": "2026-08-18T08:18:39.645009+00:00"
-  },
-  {
-    "id": 7,
-    "certificate_id": 1,
-    "certificate_uid": "CERT-SMS-LKO-2026-000001",
-    "result": "TAMPERED",
-    "ip_address": null,
-    "user_agent": null,
-    "created_at": "2026-08-18T08:18:39.658839+00:00"
-  },
-  {
-    "id": 8,
-    "certificate_id": 2,
-    "certificate_uid": "CERT-SMS-LKO-2026-000002",
-    "result": "REVOKED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:48:05.551751+00:00"
-  },
-  {
-    "id": 9,
-    "certificate_id": 2,
-    "certificate_uid": "CERT-SMS-LKO-2026-000002",
-    "result": "REVOKED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:48:05.629113+00:00"
-  },
-  {
-    "id": 10,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:50:07.500611+00:00"
-  },
-  {
-    "id": 11,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:50:07.535665+00:00"
-  },
-  {
-    "id": 12,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:53:43.518252+00:00"
-  },
-  {
-    "id": 13,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:53:43.555595+00:00"
-  },
-  {
-    "id": 14,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T11:58:56.836456+00:00"
-  },
-  {
-    "id": 15,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:00:04.727425+00:00"
-  },
-  {
-    "id": 16,
-    "certificate_id": null,
-    "certificate_uid": "SMS-2026-cs-0203",
-    "result": "NOT_FOUND",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:05:15.060533+00:00"
-  },
-  {
-    "id": 17,
-    "certificate_id": null,
-    "certificate_uid": "SMS-2026-cs-0203",
-    "result": "NOT_FOUND",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:05:42.643274+00:00"
-  },
-  {
-    "id": 18,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:05:55.068403+00:00"
-  },
-  {
-    "id": 19,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:05:55.123283+00:00"
-  },
-  {
-    "id": 20,
-    "certificate_id": null,
-    "certificate_uid": "CERT-SMS-LKO-2026-000008",
-    "result": "NOT_FOUND",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:07:38.896026+00:00"
-  },
-  {
-    "id": 21,
-    "certificate_id": null,
-    "certificate_uid": "CERT-SMS-LKO-2026-000008",
-    "result": "NOT_FOUND",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:08:12.802784+00:00"
-  },
-  {
-    "id": 22,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:08:17.822722+00:00"
-  },
-  {
-    "id": 23,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:08:29.927205+00:00"
-  },
-  {
-    "id": 24,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:12:03.073108+00:00"
-  },
-  {
-    "id": 25,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:12:03.117987+00:00"
-  },
-  {
-    "id": 26,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:12:51.314312+00:00"
-  },
-  {
-    "id": 27,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:12:51.486659+00:00"
-  },
-  {
-    "id": 28,
-    "certificate_id": null,
-    "certificate_uid": "CERT-SMS-LKO-2026-000006",
-    "result": "NOT_FOUND",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:15:40.634774+00:00"
-  },
-  {
-    "id": 29,
-    "certificate_id": 7,
-    "certificate_uid": "CERT-SMS-LKO-2026-000004",
-    "result": "VALID",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T12:15:47.345070+00:00"
-  },
-  {
-    "id": 30,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:28:58.462087+00:00"
-  },
-  {
-    "id": 31,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:28:58.537393+00:00"
-  },
-  {
-    "id": 32,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:30:22.098698+00:00"
-  },
-  {
-    "id": 33,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:30:22.156220+00:00"
-  },
-  {
-    "id": 34,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:52:15.652500+00:00"
-  },
-  {
-    "id": 35,
-    "certificate_id": 6,
-    "certificate_uid": "CERT-SMS-LKO-2026-000003",
-    "result": "TAMPERED",
-    "ip_address": "127.0.0.1",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-    "created_at": "2026-08-19T15:52:15.674402+00:00"
+    "created_at": "2026-08-20T03:24:14.093886+00:00"
   }
 ]
