@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { CheckCircle2, ShieldAlert, Key, QrCode, ArrowRight, Lock, FileCheck2, Cpu } from 'lucide-react';
+import { CheckCircle2, ShieldAlert, Key, QrCode, Lock, FileCheck2, Cpu } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 export default function LandingPage() {
